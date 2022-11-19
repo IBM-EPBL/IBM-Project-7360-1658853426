@@ -1,0 +1,131 @@
+<html>
+
+<head>
+  <title>Digit Recognition WebApp</title>
+
+  <meta name="viewport" content="width=device-width">
+<style>
+body{
+     background-image: url('image.jpeg');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+div.background {
+  background: url('image.jpeg') repeat;
+  border: 10px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: 8A2BE2;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #FF1493}
+div.container {
+  text-align: center;
+}
+
+.button:active {
+  background-color: blue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  text-align:center;
+}
+#rectangle{
+     width:400px;
+     height:150px;
+     background-color: #000000;
+     border-radius: 15px;
+     position;
+     box-shadow: 0px 0px 10px 5px white;
+     top:25%;
+     left:50%;
+     transform:translate(-50%,-50%);
+    }
+
+
+    #head{
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 3% 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+    }
+
+    #num{
+        font-size: 50px;
+    }
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+</style>
+
+</head>
+
+<script>
+  function preview() {
+    frame.src=URL.createObjectURL(event.target.files[0]);
+}
+
+    $(document).ready(function() {
+          $('#clear_button').on('click', function() {
+              $('#image').val('');
+              $('#frame').attr('src',"");
+            });
+        });
+
+</script>
+
+<body>
+
+<div class="background">
+<div class="transbox">
+
+<h1 style="font-family:courier" ; align = "center">Handwritten Digit Recognition Website</h1>
+  <section id="content">
+
+        <div class="rightside">
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+       <p align='center'> <label>Select a image:</label>
+
+<input id="image" type="file" name="image" accept="image/png, image/jpeg" onchange="preview()"><br><br>
+          <img id="frame" src="" width="100px" height="100px"/></p>
+          <div class="buttons_div"/>
+         <div class ="container"/>
+        </form>
+        </div>
+
+  </section>
+<a href="final.html"><button class="button"><p style="font-family:courier" ; align = "center"; >Predict</p></button></a>
+</body>
+
+</html>

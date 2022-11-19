@@ -1,0 +1,117 @@
+
+<head>
+    <title>Digit Recognition WebApp</title>
+</head>
+<body>
+<style>
+
+body{
+  background-image: url('image.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+ }
+
+div.background {
+  background: url('image.jpeg') repeat;
+  border: 10px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #8A2BE2;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #FF1493}
+div.container {
+  text-align: center;
+}
+
+.button:active {
+  background-color: blue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+text-align:center;
+}
+#rectangle{
+     width:400px;
+     height:150px;
+     background-color: #000000;
+     border-radius: 15px;
+     position;
+     box-shadow: 0px 0px 10px 5px white;
+     top:25%;
+     left:50%;
+     transform:translate(-50%,-50%);
+    }
+
+    #head{
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 3% 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+    }
+
+    #num{
+        font-size: 50px;
+    }
+
+</style>
+</body>
+<div class="background">
+    <div class="transbox">
+        <h1 class="welcome";align = "center"; style="font-family:courier;">IBM PROJECT </h1>
+        <div id="team_id"><p align = "center"; style="font-family:courier;">TEAM ID :PNT2022TMID37375</p> </div>
+
+        <section id="title">
+            <h4 class="heading">
+
+                <p style="font-family:courier" ; align = "center"; >Handwritten Digit Recognition Website</p></style></h4>
+
+            <p align = "center" ; style="font-family:courier">
+                The website is designed to predict the handwritten digit.
+            </p>
+            <p align = "center" ; style="font-family:courier">
+                Handwritten digit recognition is the ability of a computer to recognize the human handwritten digits from different sources like images, papers, touch screens, etc, and classify them into 10 predefined classes (0-9).Handwritten character recognition is one of the practically important issues in pattern recognition applications. The applications of digit recognition include in postal mail sorting, bank check processing, form data entry, etc.
+            </p>
+
+            <br>
+            <p align = "center" ; style="font-family:courier">
+                Hence, there comes a need for handwritten digit recognition in many real-time applications. MNIST data set is widely used for this recognition process and it has 70000 handwritten digits. We use Artificial neural networks to train these images and build a deep learning model. Web application is created where the user can upload an image of a handwritten digit. This image is analyzed by the model and the detected result is returned on to UI</p>
+
+            <div class="buttons_div">
+                <div class ="container">
+                    <a href="predict.html"><button class="button"><p style="font-family:courier" ; align = "center"; > NEXT </p></button></a>
+
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+</div>
+</html>
